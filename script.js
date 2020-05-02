@@ -1,8 +1,13 @@
 $(document).ready(function () {
   console.log("page is loaded");
-});
 
-//A function to put the current date into the HTML header when the page is loaded, using moment.js
+  //A function to put the current date into the HTML header when the page is loaded, using moment.js
+
+  var currentDate = $("#currentDate");
+  var currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss A");
+
+  console.log(currentTime);
+});
 
 //A function to clear local storage and refresh page
 
