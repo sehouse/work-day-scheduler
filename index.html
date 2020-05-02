@@ -5,30 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Day Scheduler</title>
 
-    //bootstrap link 
+    //bootstrap link
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    //CSS link
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    //Header for the Scheduler, including date 
+    //Header for the Scheduler, including date
 
     <header>
-
-      <h1> Work Day Scheduler</h1>
+      <h1>Work Day Scheduler</h1>
 
       <p id="currentDate">Current Date</p>
-
     </header>
 
-    //Blocks of time for the
-    scheduler, including a button to save changes (9AM-5PM), so 9 rows to display (unless you want to try half hours)
-
-    //1
+    //Blocks of time for the scheduler, including a button to save changes
+    (9AM-5PM), so 9 rows to display (unless you want to try half hours) //1
     <div class="container">
       <div class="row">
         <div class="time">9 AM</div>
         <textarea id="schedule9"></textarea>
-        <button id="saveSchedule9"></button>
+        <button id="saveSchedule9">Save</button>
       </div>
     </div>
 
@@ -38,7 +52,7 @@
       <div class="row">
         <div class="time">10 AM</div>
         <textarea id="schedule10"></textarea>
-        <button id="saveSchedule10"></button>
+        <button id="saveSchedule10">Save</button>
       </div>
     </div>
 
@@ -48,7 +62,7 @@
       <div class="row">
         <div class="time">11 AM</div>
         <textarea id="schedule11"></textarea>
-        <button id="saveSchedule11"></button>
+        <button id="saveSchedule11">Save</button>
       </div>
     </div>
 
@@ -58,7 +72,7 @@
       <div class="row">
         <div class="time">12 PM</div>
         <textarea id="schedule12"></textarea>
-        <button id="saveSchedule12"></button>
+        <button id="saveSchedule12">Save</button>
       </div>
     </div>
 
@@ -68,7 +82,7 @@
       <div class="row">
         <div class="time">1 PM</div>
         <textarea id="schedule1"></textarea>
-        <button id="saveSchedule1"></button>
+        <button id="saveSchedule1">Save</button>
       </div>
     </div>
 
@@ -78,7 +92,7 @@
       <div class="row">
         <div class="time">2 PM</div>
         <textarea id="schedule2"></textarea>
-        <button id="saveSchedule2"></button>
+        <button id="saveSchedule2">Save</button>
       </div>
     </div>
 
@@ -88,7 +102,7 @@
       <div class="row">
         <div class="time">3 PM</div>
         <textarea id="schedule3"></textarea>
-        <button id="saveSchedule3"></button>
+        <button id="saveSchedule3">Save</button>
       </div>
     </div>
 
@@ -98,7 +112,7 @@
       <div class="row">
         <div class="time">4 PM</div>
         <textarea id="schedule4"></textarea>
-        <button id="saveSchedule4"></button>
+        <button id="saveSchedule4">Save</button>
       </div>
     </div>
 
@@ -108,17 +122,24 @@
       <div class="row">
         <div class="time">5 PM</div>
         <textarea id="schedule5"></textarea>
-        <button id="saveSchedule5"></button>
+        <button id="saveSchedule5">Save</button>
       </div>
     </div>
-    
-    //Clear button
 
-    //jquery script 
+    //Clear button //jquery script
+
+    <script
+      src="http://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
 
     //moment.js script
 
-    //script.js script 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.0/moment.min.js"></script>
 
+    //script.js script
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
