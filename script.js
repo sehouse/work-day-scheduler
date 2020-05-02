@@ -1,17 +1,23 @@
 $(document).ready(function () {
   console.log("page is loaded");
 
-  //A function to put the current date into the HTML header when the page is loaded, using moment.js
+  //Dom manipulatio to put the current date into the HTML header when the page is loaded, using moment.js
 
-  var currentDate = $("#currentDate");
   var currentTime = moment().format("dddd, MMMM Do YYYY, h:mm:ss A");
 
-  console.log(currentTime);
+  var currentDate = $("#currentDate");
+
+  currentDate.text(currentTime);
 });
 
-//A function to clear local storage and refresh page
-
 // 9 functions to save the user's text input for each row into local storage
+
+$("#saveSchedule1").on("click", function () {
+  $("#schedule1").val(localStorage.getItem("notes"));
+  localStorage.setItem("notes", $("#schedule1").val());
+
+  console.log(localStorage);
+});
 
 //1
 
@@ -32,3 +38,5 @@ $(document).ready(function () {
 //9
 
 //checks for time to change color of the rows
+
+//A function to clear local storage and refresh page
