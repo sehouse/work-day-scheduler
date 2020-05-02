@@ -114,3 +114,7 @@ function updateSchedule9() {
 //checks for time to change color of the rows
 
 //A function to clear local storage and refresh page
+$("#clear").on("click", clear);
+function clear() {
+  localStorage.clear();
+}
