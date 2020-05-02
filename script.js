@@ -12,12 +12,12 @@ $(document).ready(function () {
 
 // 9 functions to save the user's text input for each row into local storage
 
-$("#saveSchedule1").on("click", function () {
-  $("#schedule1").val(localStorage.getItem("notes"));
-  localStorage.setItem("notes", $("#schedule1").val());
+$("#saveSchedule1").on("click", updateNotes1);
+$("#schedule1").val(localStorage.getItem("notes"));
 
-  console.log(localStorage);
-});
+function updateNotes1() {
+  localStorage.setItem("notes", $("#schedule1").val());
+}
 
 //1
 
