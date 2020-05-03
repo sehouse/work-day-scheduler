@@ -91,6 +91,81 @@ function updateSchedule9() {
 
 //checks for time to change color of the rows
 
+var hour = new Date().getHours();
+
+console.log(hour);
+
+if (hour > 9) {
+  $("#schedule1").addClass("past");
+} else if (hour >= 9 && hour < 10) {
+  $("#schedule1").addClass("present");
+} else if (hour < 9) {
+  $("#schedule1").addClass("future");
+}
+
+if (hour > 10) {
+  $("#schedule2").addClass("past");
+} else if (hour >= 10 && hour < 11) {
+  $("#schedule2").addClass("present");
+} else if (hour < 10) {
+  $("#schedule2").addClass("future");
+}
+
+if (hour > 11) {
+  $("#schedule3").addClass("past");
+} else if (hour >= 11 && hour < 12) {
+  $("#schedule3").addClass("present");
+} else if (hour < 11) {
+  $("#schedule3").addClass("future");
+}
+
+if (hour > 12) {
+  $("#schedule4").addClass("past");
+} else if (hour >= 12 && hour < 13) {
+  $("#schedule4").addClass("present");
+} else if (hour < 12) {
+  $("#schedule4").addClass("future");
+}
+
+if (hour > 13) {
+  $("#schedule5").addClass("past");
+} else if (hour >= 13 && hour < 14) {
+  $("#schedule5").addClass("present");
+} else if (hour < 13) {
+  $("#schedule5").addClass("future");
+}
+
+if (hour > 14) {
+  $("#schedule6").addClass("past");
+} else if (hour >= 14 && hour < 15) {
+  $("#schedule6").addClass("present");
+} else if (hour < 14) {
+  $("#schedule6").addClass("future");
+}
+
+if (hour > 15) {
+  $("#schedule7").addClass("past");
+} else if (hour >= 15 && hour < 16) {
+  $("#schedule7").addClass("present");
+} else if (hour < 15) {
+  $("#schedule7").addClass("future");
+}
+
+if (hour > 16) {
+  $("#schedule8").addClass("past");
+} else if (hour >= 16 && hour < 17) {
+  $("#schedule8").addClass("present");
+} else if (hour < 16) {
+  $("#schedule8").addClass("future");
+}
+
+if (hour > 17) {
+  $("#schedule9").addClass("past");
+} else if (hour >= 17 && hour < 18) {
+  $("#schedule9").addClass("present");
+} else if (hour < 17) {
+  $("#schedule9").addClass("future");
+}
 //A function to clear local storage and refresh page
 
 $("#clear").on("click", clear);

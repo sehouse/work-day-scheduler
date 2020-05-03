@@ -47,6 +47,18 @@ textarea:focus {
   outline: 0;
 }
 
+.past {
+  background-color: DimGrey;
+}
+
+.present {
+  background-color: IndianRed;
+}
+
+.future {
+  background-color: lightgreen;
+}
+
 /*Custom save button?*/
 
 /*Custom clear button?*/
