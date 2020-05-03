@@ -10,6 +10,11 @@ body {
 }
 
 /*Bootstrap for time rows*/
+
+textarea {
+  white-space: pre-wrap;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -20,6 +25,14 @@ body {
   white-space: pre-wrap;
   height: 75px;
   justify-content: center;
+}
+
+.time {
+  background-color: darkgrey;
+  text-align: center;
+  width: 10%;
+  border: 1px solid black;
+  padding-top: 25px;
 }
 
 /*Custom save button?*/
