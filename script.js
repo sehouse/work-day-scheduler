@@ -93,8 +93,6 @@ function updateSchedule9() {
 
 var hour = new Date().getHours();
 
-console.log(hour);
-
 if (hour > 9) {
   $("#schedule1").addClass("past");
 } else if (hour >= 9 && hour < 10) {
