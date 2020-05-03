@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //Dom manipulatio to put the current date into the HTML header when the page is loaded, using moment.js
+  //Dom manipulation to put the current date into the HTML header when the page is loaded, using moment.js
 
   var currentTime = moment().format("dddd, MMMM Do, YYYY, h:mm A");
   var currentDate = $("#currentDate");
