@@ -1,13 +1,26 @@
-/*Bootstrap for header*/
 body {
   background-color: gainsboro;
 }
+
+/*Bootstrap for header*/
 .jumbotron {
   text-align: center;
   border-bottom: 8px solid black;
+  background-color: darkgrey;
 }
 
 /*Bootstrap for time rows*/
+.container {
+  width: 100%;
+  height: 100%;
+  float: center;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 75px;
+  justify-content: center;
+}
 
 /*Custom save button?*/
 
